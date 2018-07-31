@@ -73,7 +73,7 @@ function removeFromCart(item) {
   return "That item is not in your cart."
 }
 
-function placeOrder(cardNumber) {
+function placeOrder(cardNumber = ``) {
    getCart()
    var final = total()
   if (cardNumber === ``) {
